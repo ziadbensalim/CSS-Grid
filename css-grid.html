@@ -11,9 +11,12 @@
       }
       .el--2 {
         background-color: orangered;
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 3;
       }
       .el--3 {
         background-color: green;
+        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -29,6 +32,8 @@
       }
       .el--8 {
         background-color: crimson;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
       }
 
       .container--1 {
@@ -42,9 +47,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        height: 500px;
 
-        column-gap: 10px;
+        column-gap: 20px;
         row-gap: 40px;
       }
 
