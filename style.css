@@ -19,15 +19,10 @@ body {
 .main-header {
   background-color: #becdf9;
   padding: 20px 40px;
-  margin-bottom: 60px;
 }
 
 nav {
   font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
 }
 
 .post-header {
@@ -39,7 +34,6 @@ aside {
   border-top: 5px solid #2f60f3;
   border-bottom: 5px solid #2f60f3;
   padding: 50px 40px;
-  width: 500px;
 }
 
 h1,
@@ -258,7 +252,7 @@ footer {
   font-style: normal;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
@@ -272,4 +266,22 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* CSS GRID */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
 }
